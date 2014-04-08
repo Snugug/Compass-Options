@@ -1,6 +1,6 @@
 {
   "name": "compass-options",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small Node module for parsing Compass's config.rb file into options for use in Node projects (especially Grunt/Gulp/etc…)",
   "main": "app/index.js",
   "scripts": {
