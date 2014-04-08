@@ -1,0 +1,28 @@
+{
+  "name": "compass-options",
+  "version": "0.1.0",
+  "description": "A small Node module for parsing Compass's config.rb file into options for use in Node projects (especially Grunt/Gulp/etc…)",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Snugug/Compass-Options.git"
+  },
+  "keywords": [
+    "Sass",
+    "Compass",
+    "Grunt",
+    "Gulp"
+  ],
+  "author": "Sam Richard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Snugug/Compass-Options/issues"
+  },
+  "homepage": "https://github.com/Snugug/Compass-Options",
+  "dependencies": {
+    "iniparser": "^1.0.5"
+  }
+}
