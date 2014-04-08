@@ -2,8 +2,8 @@ var iniparser = require('iniparser');
 var fs = require('fs');
 
 var dirs = function (options) {
-  var config = options.config || './config.rb';
-  var trailing = options.trailing || false;
+  var config = options && options.config ? options.config : './config.rb';
+  var trailing = options && options.trailing ? options.trailing : false;
   var userSettings = {};
   if (fs.existsSync(config)) {
     userSettings = iniparser.parseSync(config)
@@ -50,7 +50,7 @@ var dirs = function (options) {
 
 module.exports.paths = function (options) {
   var settings = dirs(options);
-  var trailing = options.trailing || false;
+  var trailing = options && options.trailing ? options.trailing : false;
   var paths = {};
       paths.html = settings.html;
 
